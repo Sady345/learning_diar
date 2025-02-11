@@ -1,0 +1,12 @@
+---
+title: "Week 2 - Xaringan and Quarto"
+format: html
+editor: visual
+---
+
+## Presentation
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://sady345.github.io/Remote-sensing/#9",
+                              ratio = "16:9")
+```

@@ -1,0 +1,40 @@
+---
+title: "Week 3 - Corrections"
+format: html
+editor: visual
+---
+
+## **This week I learned that there are many ways to correct data….**
+
+![](fixedmeme.jpg){fig-align="center"}
+
+\
+Most of the data that we’d use would come analysis ready however in a situation where you are dealing with raw data you would need to correct it. Corrections involve adjusting raw sensor data to remove potential flaws in atmospheric conditions, spatial inaccuracies and topographical variations. 
+
+More often than not remotely sensed data contains flaws. 
+
+A famous example is when the landsat scan line corrector failed, without the landsat corrector we got zig zags and a misaligned image.\
+
+### **Examples:**
+
+Geometric correction: refers to the process of correcting for distortions in satellite 
+
+Imagery caused by multiple different factors including height, speed and direction of the imaging platform. It includes selecting ground control points (points that do not change) and matching them to a gold standard image. OS is probably the best to use as a corrected image because it has highly accurate and regularly updated geographic reference points.
+
+\
+Atmospheric correction: Atmospheric correction is always the first thing that you should do. It is the process of removing the effects of the Earth's atmosphere on satellite or airborne imagery. Examples include dark object subtraction (DOS), pseudo-invariant features (PIFs) and empirical line correction.
+
+\
+Orthorectification correction: is a subset of georectification and it creates a final product whereby each pixel in the image is depicted as if it were collected from directly overhead or as close to this as possible.
+
+Radiometric calibration: ensures that the satellite records light correctly by converting the recorded original digital number value into the reflectivity of the outer surface of the atmosphere. 
+
+## Application: 
+
+Applications of Vegetative Indices from Remote Sensing to Agriculture (Hatfield et al., 2019). 
+
+I did some research on academic papers that include any mention of corrections. This paper highlights the importance of atmospheric corrections to assess plant conditions.  By modelling atmospheric effects and calibrating data with ground measurements, researchers can enhance the effectiveness of VIs in distinguishing between different crop conditions. This accuracy ensures better monitoring of crop health and quick responses to environmental stresses.
+
+## Reflection: 
+
+The practical was quite long because it explored the many different ways to correct and enhance data. Also, I couldn't complete the section that filtered and fused the data because it continuously crashed my r. I would only attempt this again if it was completely necessary and I had a computer with much better processing power. It will take a lot longer than a week to get around these concepts. However, if I am using raw data, potentially from two different satellites I now know how to perform radiometric calibration and ensure that there is consistency between the datasets.

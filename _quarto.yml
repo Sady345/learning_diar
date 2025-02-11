@@ -1,0 +1,25 @@
+project:
+  type: book
+  output-dir: docs
+  
+book:
+  title: "Learning Diary"
+  author: "Sadia Munye"
+  date: "1/21/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - Week 1 - Getting started with remote sensing.qmd
+    - Week 2 - Xaringan and Quarto.qmd
+    - Week 3 - corrections.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+
+
+

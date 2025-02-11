@@ -1,0 +1,29 @@
+---
+title: "Week 1 - Getting started with remote sensing"
+---
+
+## **Summary:**
+
+This week’s lecture taught me that remote sensing involves gathering data from a distance, which is achieved through sensors mounted on a platform including satellites, planes and even… mobile phones. 
+
+This interests me because of the vast amount of available data. From the lecture, I learned that satellites revisit the same locations on Earth daily to every 16 days, continuously collecting data.
+
+In the practical we used data from two multispectral sensors meaning they capture imagery across multiple wavelengths of the electromagnetic spectrum. Landsat satellites detect earth data while in orbit at a 30m resolution and have been providing the longest continuous Earth Observation record dating back to 1972. Whereas, Sentinel 2 (Beginning 2015) are a pair of satellites that monitor the earth’s land surface at a higher resolution (10-60m). 
+
+I currently work for the London Borough of Tower Hamlets and this could be very beneficial to identify areas where there is illegal dumping of waste. For instance, multispectral imagery might be able to detect different materials in waste, such as plastics, metals, or organic matter, which may indicate illegal disposal.
+
+## **Applications:**
+
+One paper by Puliti et al., used both Landsat and Sentinel-2 data to monitor above ground biomass change (AGB). Traditionally, estimating AGB has relied on field based inventory methods which can be limited in spatial coverage and temporal frequency. However, this paper  found that satellite data provided valuable additional data that improved the accuracy of AGB change estimates. Sentinel-2 was preferred over Landsat due to its higher spatial resolution, but landsat was helpful for historical analysis as its been operational since the early 1970s.
+
+## Reflection:
+
+From the practical, the differences between Sentinel-2 and Landsat were clear. The contrast in imagery from the Landsat and Sentinel-2 can differ, and this is due to the differences in their sensor characteristics and processing methods. Landsat provides a 30 meter spatial resolution and Sentinel provides as high as 10 meters for certain bands. I was really confused from the practical why the images were so different. However its also because you might not be able to get an image from the exact time and day for both satellites. 
+
+![Before colour manipulation in snap](Before%20CM.png){fig-align="center"}
+
+***How it looks after I used the colour manipulation:***
+
+![After colour manipulation in SNAP](Colour%20Manipulation.png){fig-align="center"}
+
+Therefore, it is important to be cautious when using both datasets together and understand each datasets strengths and limitations. 
