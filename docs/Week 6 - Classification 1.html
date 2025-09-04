@@ -97,6 +97,9 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Learning Diary</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/username/repo-name" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -162,14 +165,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">References:</span></span></a>
   </div>
 </li>
     </ul>
@@ -192,8 +189,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#unsupervised" id="toc-unsupervised" class="nav-link" data-scroll-target="#unsupervised"><span class="header-section-number">6.2.2</span> Unsupervised:</a></li>
   </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> <strong>Reflection:</strong></a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.4</span> References:</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/username/repo-name/edit/main/Week 6 - Classification 1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/username/repo-name/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -219,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
-<p>Before the lecture, I felt nervous as machine learning and classification seemed challenging. However, unlike GEE, these techniques have long been used in remote sensing (Lary, 2015) to categorise pixels, objects, or patterns into thematic classes. Here is a very interesting example where a nonprofit organisation used satellite technology and machine learning to combat illegal fishing:</p>
+<p>Before the lecture, I felt nervous as machine learning and classification seemed challenging. However, unlike GEE, these techniques have long been used in remote sensing to categorise pixels, objects, or patterns into thematic classes. Here is a very interesting example where a nonprofit organisation used satellite technology and machine learning to combat illegal fishing:</p>
 <div style="aspect-ratio:16/9; width:100%; max-width:800px; margin:1rem auto; position:relative;">
 <iframe src="https://www.youtube.com/embed/Mz9xysVIrUU" title="Project eyes on the seas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="position:absolute; inset:0; width:100%; height:100%; border:0;">
 </iframe>
@@ -278,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
 <p>With higher accuracy we often lose interpretability of our models.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="machine_learning.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="machine_learning.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="566"></p>
 </figure>
 </div>
 <p><strong>Source:</strong> <a href="https://www.researchgate.net/figure/Four-causes-of-mixed-pixels_fig3_242103275">SHEYKHMOUSA et al.&nbsp;2020 Support Vector Machine Versus Random Forest for Remote Sensing Image Classification: A Meta-Analysis and Systematic Review</a></p>
@@ -293,18 +291,18 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="mangrove.jpg" class="img-fluid figure-img"></p>
-<figcaption>Framework of the proposed method for mangrove ecosystem mapping using the random forest (RF)</figcaption>
+<figcaption>Framework of the proposed method for mangrove ecosystem mapping using the random forest (Ghorbanian et al., 2021)</figcaption>
 </figure>
 </div>
 <p>Ghorbanian et al.&nbsp;(2021), mapped the Hara mangrove ecosystem using Sentinel-1 synthetic aperture radar data and Sentinel-2 optical data within Google Earth Engine. Nine detailed mangrove classes were identified using precise reference samples from high-resolution imagery,divided into training and testing sets with cross-validation to ensure robustness. Seasonal features reflecting tidal variations were used with a Random Forest classifier, improving classification accuracy. The approach achieved high accuracy (93.23% overall accuracy, 0.92 Kappa coefficient) and consistency, demonstrating the effectiveness of combining multi-source data and seasonal downscaling for detailed, automated, and repeatable mangrove ecosystem mapping worldwide. Supervised classification was ideal due to difficult field access, necessitating reliable reference data from imagery, and the need to differentiate detailed mangrove classes critical for ecosystem monitoring.</p>
 </section>
 <section id="unsupervised" class="level3" data-number="6.2.2">
 <h3 data-number="6.2.2" class="anchored" data-anchor-id="unsupervised"><span class="header-section-number">6.2.2</span> Unsupervised:</h3>
-<p>On the other hand Rapinela et al.&nbsp;(2019) used an unsupervised hierarchical TWINSPAN classifier to group vegetation relevé data into plant community types. TWINSPAN worked by repeatedly splitting the data into clusters based on species composition and identifying indicator species that defined each division. This process produced a hierarchical classification tree of vegetation units, with each relevé assigned to a cluster of similar species assemblages. The quality of these clusters was then assessed using silhouette widths, where values close to 1 indicated strong cohesion within clusters and clear separation from others. This method effectively identified consistent, locally relevant plant communities in wet grasslands, avoiding the limitations of broad, continental-scale habitat maps that often overlook fine-scale ecological patterns.</p>
+<p>On the other hand Rapinel et al.&nbsp;(2019) used an unsupervised hierarchical TWINSPAN classifier to group vegetation relevé data into plant community types. TWINSPAN worked by repeatedly splitting the data into clusters based on species composition and identifying indicator species that defined each division. This process produced a hierarchical classification tree of vegetation units, with each relevé assigned to a cluster of similar species assemblages. The quality of these clusters was then assessed using silhouette widths, where values close to 1 indicated strong cohesion within clusters and clear separation from others. This method effectively identified consistent, locally relevant plant communities in wet grasslands, avoiding the limitations of broad, continental-scale habitat maps that often overlook fine-scale ecological patterns.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Unsupervised.png" class="img-fluid figure-img" width="274"></p>
-<figcaption>Map of plant communities derived from the classification of Sentinel-2 time-series using a linear kernel support vector machine classifier.</figcaption>
+<figcaption>Map of plant communities derived from the classification of Sentinel-2 time-series using a linear kernel support vector machine classifier (Rapinela et al., 2019).</figcaption>
 </figure>
 </div>
 <p>Ultimately, Ghorbanian et al.&nbsp;(2021) showed supervised methods achieve high accuracy but rely on reference data and heavy computation. Rapinela et al.&nbsp;(2019) highlighted that unsupervised approaches avoid this but are less transferable. Future work could explore hybrid or semi-supervised methods (Which I’m sure we will cover next week), combining the precision of supervised models with the adaptability of unsupervised ones, supported by advances in transfer learning and cloud-based platforms.</p>
@@ -323,6 +321,11 @@ ul.task-list li input[type="checkbox"] {
 <p>I also started to think about other ways I could apply classification and remote sensing to work. For instance, supervised learning might help map green space distribution or track patterns of development, while unsupervised approaches could identify emerging trends without the burden of extensive training data. Such possibilities suggest real scope for evidence based decision making at a local level.</p>
 <p>The lecture also raised a critical methodological point. If training and validation data are located too closely together. This spatial dependency can lead to inflated accuracy, effectively giving the model a “sneak peek” at validation data. Unless this is accounted for through techniques such as spatial cross validation or block sampling, results may appear stronger than they truly are. The risk is particularly important in policy contexts, where misleading accuracy could undermine trust or lead to poor decisions.</p>
 <p>Overall, I think that this week was less about memorising algorithms and more about understanding their implications. Machine learning is not simply a technical skillset but a bridge between disciplines. It holds potential for environmental monitoring, urban planning, and social policy, provided it is applied with both rigour and transparency.</p>
+</section>
+<section id="references" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="references"><span class="header-section-number">6.4</span> References:</h2>
+<p>Ghorbanian, A., Zaghian, S., Asiyabi, R.M., Amani, M., Mohammadzadeh, A. and Jamali, S. (2021). Mangrove Ecosystem Mapping Using Sentinel-1 and Sentinel-2 Satellite Images and Random Forest Algorithm in Google Earth Engine. Remote Sensing, 13(13), p.2565. doi:<a href="https://doi.org/10.3390/rs13132565" class="uri">https://doi.org/10.3390/rs13132565</a>.</p>
+<p>Rapinel, S., Mony, C., Lecoq, L., Clément, B., Thomas, A., &amp; Hubert-Moy, L. (2019). Evaluation of Sentinel-2 time-series for mapping floodplain grassland plant communities. <em>Remote Sensing of Environment,</em> 223, 115–129. <a href="https://doi.org/10.1016/j.rse.2019.01.018" class="uri">https://doi.org/10.1016/j.rse.2019.01.018</a></p>
 
 
 </section>
@@ -765,4 +768,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/username/repo-name/edit/main/Week 6 - Classification 1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/username/repo-name/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

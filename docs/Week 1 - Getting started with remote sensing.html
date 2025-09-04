@@ -37,10 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -97,6 +99,10 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Learning Diary</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/Sady345/learning_diar" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -162,14 +168,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">References:</span></span></a>
   </div>
 </li>
     </ul>
@@ -193,8 +193,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#combining-landsat-and-sentinel-2-data-to-assess-burn-severity" id="toc-combining-landsat-and-sentinel-2-data-to-assess-burn-severity" class="nav-link" data-scroll-target="#combining-landsat-and-sentinel-2-data-to-assess-burn-severity"><span class="header-section-number">1.2.1</span> <strong>Combining Landsat and Sentinel-2 data to assess burn severity</strong></a></li>
   </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">1.3</span> Reflection:</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">1.4</span> References</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Sady345/learning_diar/blob/main/Week 1 - Getting started with remote sensing.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -237,7 +238,7 @@ Satellite and Airplane Imaging
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Cameras on satellites and airplanes take images of large areas on the Earth’s surface. This technology provides the ability to monitor vast landscapes and track changes over time, which is especially useful for environmental studies, urban planning, and disaster management.</p>
-<p><img src="Satellites.jpg" class="img-fluid" style="width:80.0%"></p>
+<p><img src="Satellites.jpg" class="img-fluid" style="width:80.0%"> Source:<a href="&quot;https://www.industrytap.com/remote-sensing-sustainable-land-use/33218&quot;">Industry tap</a></p>
 </div>
 </div>
 </div>
@@ -254,7 +255,7 @@ Sonar Systems for Ocean Floor Imaging
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Sonar systems on ships can be used to create images of the ocean floor without needing to travel to the bottom of the ocean. These systems emit sound waves that bounce off the ocean floor, providing detailed images of underwater features, such as seafloor topography and submerged objects, aiding navigation and marine research.</p>
-<p><img src="sonarimge.gif" class="img-fluid" style="width:80.0%"></p>
+<p><img src="sonarimge.gif" class="img-fluid" style="width:80.0%"> Source:<a href="&quot;https://divediscover.whoi.edu/archives/ventcd/vent_discovery/deeperdiscovery/tools_sonar_singlebeam.html&quot;">divediscover</a></p>
 </div>
 </div>
 </div>
@@ -271,7 +272,7 @@ Satellite Imaging for Marine Biological and Physical Variables
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Cameras on satellites can be used to make images of biological and physical variables in the oceans. This includes observing sea surface temperature, chlorophyll-a concentrations, and ocean color. These images allow for the monitoring of marine ecosystems, tracking biological productivity, and understanding the impacts of climate change on ocean health.</p>
-<p><img src="ocean.jpeg" class="img-fluid" style="width:80.0%"></p>
+<p><img src="ocean.jpeg" class="img-fluid" style="width:80.0%"> Source:<a href="&quot;https://www.researchgate.net/figure/Satellite-remote-sensing-and-the-Marine-Biological-Observation-Network-Red-squares_fig1_356094764&quot;">Marine Biological Observation Network</a></p>
 </div>
 </div>
 </div>
@@ -285,18 +286,15 @@ Satellite Imaging for Marine Biological and Physical Variables
 <p><img src="em_spec.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
 </figure>
 </div>
+<p>Source:<a href="&quot;https://seos-project.eu/classification/classification-c01-p05.html&quot;">Science Education through Earth Observation for High Schools</a></p>
 <p>Different sensors are designed with different spectral resolutions.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="multispec.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
+<p><img src="multispec.png" class="img-fluid quarto-figure quarto-figure-center"> Source:<a href="&quot;https://nireos.com/application/what-is-hyperspectral-imaging/&quot;">nireos</a></p>
 <p>Multispectral sensors capture a few broad spectral bands (3–10), mainly visible light and some non-visible bands including infrared. They are simple so therefore cost-effective and suitable for large-scale monitoring such as distinguishing forest from water, but their broad bands can obscure finer differences, such as between tree species or in water quality.</p>
 <p>Hyperspectral imaging captures data in hundreds of narrow adjacent spectral bands. This allows for finer distinctions, such as between tree species or specific water pollutants. However, this detail comes at the cost of greater complexity and large datasets that are more demanding to process. Due to this, hyperspectral imaging is less suitable for continuous global monitoring.</p>
 </section>
 <section id="what-i-make-of-this" class="level3" data-number="1.1.3">
 <h3 data-number="1.1.3" class="anchored" data-anchor-id="what-i-make-of-this"><span class="header-section-number">1.1.3</span> What I make of this:</h3>
-<p>I currently work for the London Borough of Tower Hamlets, where the mayor has declared a waste emergency and the borough is currently the worst in the country for recycling. Hyperspectral imagery would be very useful in this case to potentially detect and classify the types of contamination present in recycling loads. However, this would require th purchasing of a hyperspectral cameria. Likewuse, I don’t know much about classification yet so I’ll see if i still think this in week 6…</p>
+<p>I currently work for the London Borough of Tower Hamlets, where the mayor has declared a waste emergency and the borough is currently the worst in the country for recycling. After conducting some further research I found that hyperspectral imagery would be very useful in this case to potentially detect and classify the types of contamination present in recycling loads <a href="https://journals.uclpress.co.uk/ucloe/article/id/3237/">(Taneepanichskul et al., 2025)</a>. However, this would require the purchasing of a hyperspectral camera. Likewise, I don’t know much about classification yet so I’ll see if i still think this in week 6…</p>
 </section>
 </section>
 <section id="applications" class="level2" data-number="1.2">
@@ -358,9 +356,15 @@ Sentinel 2:
 </section>
 <section id="reflection" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">1.3</span> Reflection:</h2>
-<p>My views on remote sensing have definitely changed . During my undergraduate degree I was always scared to choose any remote sensing modules as I was always warned about how difficult they were. This week, I began to see how it connects to everyday problems and decisions. The ability to extract patterns from imagery whether through hyperspectral or multispectral imagery made me think about how often we overlook information that is literally all around us, waiting to be seen.</p>
+<p>My views on remote sensing have definitely changed. During my undergraduate degree I was always scared to choose any remote sensing modules as I was always warned about how difficult they were. This week, I began to see how it connects to everyday problems and decisions. The ability to extract patterns from imagery whether through hyperspectral or multispectral imagery made me think about how often we overlook information that is literally all around us, waiting to be seen.</p>
 <p>I found the contrast between different satellite systems interesting. Initially, I was frustrated by the inconsistencies in the imagery and assumed that I was doing something wrong. However, this helped me realise the importance of evaluating data critically rather than accepting it at face value. This feels relevant beyond remote sensing, reminding me that any dataset is shaped by how it was collected, processed, and presented.</p>
-<p>I’m looking forward to the upcoming weeks, to really get into detail about how remotely sensed data is currently used for research and policy. Even though my background is not in physics or earth sciences, I can already imagine links with waste management, and environmental policy. The possibility of using spectral patterns to identify waste materials makes me consider how remote sensing could provide valuable evidence for local councils. Though that also raises the question of data availability, there’s only so much open data out there and local governments do have a relatively limited budget. I’ll definitely look into whether the council has any access to remotely sensed data or if they have ever used remotely sensed data for analysis .</p>
+<p>I’m looking forward to the upcoming weeks, to really get into detail about how remotely sensed data is currently used for research and policy. Even though my background is not in physics or earth sciences, I can already imagine links with waste management, and environmental policy. The possibility of using spectral patterns to identify waste materials makes me consider how remote sensing could provide valuable evidence for local councils. Though that also raises the question of data availability, there’s only so much open data out there and local governments do have a relatively limited budget. I’ll definitely look into whether the council has any access to remotely sensed data or if they have ever used remotely sensed data for analysis.</p>
+</section>
+<section id="references" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="references"><span class="header-section-number">1.4</span> References</h2>
+<p>Taneepanichskul, N., Hailes, H. C. and Miodownik, M., (2025). Using hyperspectral imaging and machine learning to identify food contaminated compostable and recyclable plastics. UCL Open Environment 7, 1.</p>
+<p>USGS (2025). What Is Remote Sensing and What Is It Used for? [online] www.usgs.gov. Available at: <a href="https://www.usgs.gov/faqs/what-remote-sensing-and-what-it-used." class="uri">https://www.usgs.gov/faqs/what-remote-sensing-and-what-it-used.</a></p>
+<p>Quintano, C., Fernández-Manso, A. and Fernández-Manso, O. (2018). Combination of Landsat and Sentinel-2 MSI data for initial assessing of burn severity. International Journal of Applied Earth Observation and Geoinformation, [online] 64, pp.221–225. Available at: <a href="https://www.sciencedirect.com/science/article/pii/S0303243417302039" class="uri">https://www.sciencedirect.com/science/article/pii/S0303243417302039</a>.</p>
 
 
 </section>
@@ -386,6 +390,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -803,4 +951,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Sady345/learning_diar/blob/main/Week 1 - Getting started with remote sensing.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>

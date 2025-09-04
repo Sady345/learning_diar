@@ -97,6 +97,9 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Learning Diary</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/username/repo-name" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -162,14 +165,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">References:</span></span></a>
   </div>
 </li>
     </ul>
@@ -185,8 +182,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary:</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> <strong>Application:</strong></a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> <strong>Reflection:</strong></a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.4</span> References:</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/username/repo-name/edit/main/Week 7 - Classification 2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/username/repo-name/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -237,14 +235,15 @@ ul.task-list li input[type="checkbox"] {
 <p>The image below displays (a) 2002 and (b) 2009 OBIA drive classifications. Where: dark green represents tree cover, light green represents grass and fields and all other colours are impervious surfaces (grey for roads and paved areas, light brown for ground and brown for buildings.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="OBIA.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="OBIA.png" class="img-fluid figure-img"></p>
+<figcaption>(a) 2002 and (b) 2009 OBIA drive classification (Moskal et al., 2011)</figcaption>
 </figure>
 </div>
 <p>To assess the accuracy of each case study, a visual assessment using 2.54 cm resolution, 2002 aerial imagery combined with the 2009 co-registered oblique photography was conducted by an expert image analyst who was not involved in the classification process. The image below represents a confusion matrix similar to the ones we discussed in the lecture to display the accuracy assessment for case study 1.</p>
 <p><br>
-<img src="OBIA_2.png" class="img-fluid"><br>
-<br>
-The overall accuracy was 71.3% which is reasonably good for broad analysis, however may not be useful for fine scale analysis. Segmentation often over- or under-represented features, while spectral confusion between trees, grass, and shadows reduced accuracy. The 71.3% overall accuracy also meant nearly one in three features were misclassified. Likewise, the assessment was undertaken by a single analyst.&nbsp;</p>
+<img src="OBIA_2.png" class="img-fluid quarto-figure quarto-figure-center" width="510"><br>
+Confusion matrix (Moskal et al., 2011)</p>
+<p>The overall accuracy was 71.3% which is reasonably good for broad analysis, however may not be useful for fine scale analysis. Segmentation often over- or under-represented features, while spectral confusion between trees, grass, and shadows reduced accuracy. The 71.3% overall accuracy also meant nearly one in three features were misclassified. Likewise, the assessment was undertaken by a single analyst.&nbsp;</p>
 <p>Ghorbanzadeh et al., however aimed to improve the detection of landslides using a combination of deep learning and OBIA. They first generated landslide probability maps with ResU-Net, which identified potential landslide areas based on pixel-level classification. then applied rule-based OBIA using geometrical features including the length-to-width ratio to distinguish between landslides and other similar looking features such as riverbeds. By integrating both approaches, they produced more accurate landslide maps, significantly improving detection performance compared to using each method alone.</p>
 </section>
 <section id="reflection" class="level2" data-number="7.3">
@@ -256,7 +255,11 @@ The overall accuracy was 71.3% which is reasonably good for broad analysis, howe
 </p>
 <p>For now, based on what I understand from the material, if I were to choose a classification method I would opt for sub pixel analysis because with 30m landsat data like the one used for this week’s practical many pixels would include mixtures of land cover types. OBIA push each pixel into one class which would not work for heterogeneous blocks.</p>
 <p>At work, these methods could be applied to monitoring how green space within urban areas changes over time. The council are often researching leisure and physical activity of residents in the borough and the topic of proximity to greenspace has come up. Likewise, Tower Hamlets is also rapidly growing in population and new developments are often being built to adapt to this. Being able to distinguish between mixed land cover types would make it easier to track whether areas that appear as open space are gradually being lost to development or whether vegetation quality within parks is declining.</p>
-<p>Links:</p>
+</section>
+<section id="references" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="references"><span class="header-section-number">7.4</span> References:</h2>
+<p>Ghorbanzadeh, O., Shahabi, H., Crivellari, A., Homayouni, S., Blaschke, T. and Ghamisi, P. (2022). Landslide detection using deep learning and object-based image analysis. Landslides, 19(4), pp.929–939. doi:<a href="https://doi.org/10.1007/s10346-021-01843-x" class="uri">https://doi.org/10.1007/s10346-021-01843-x</a>.</p>
+<p>Moskal, L.M., Styers, D.M. and Halabisky, M. (2011). Monitoring urban tree cover using object-based image analysis and public domain remotely sensed data. Remote Sensing, 3(10), pp.&nbsp;2243–2262. doi:10.3390/rs3102243.</p>
 
 
 </section>
@@ -699,4 +702,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/username/repo-name/edit/main/Week 7 - Classification 2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/username/repo-name/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
