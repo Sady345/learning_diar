@@ -4,37 +4,45 @@ format: html
 editor: visual
 ---
 
-## **This week I learned that there are many ways to correct data….**
+## **This week I discovered that there are many ways to correct data….**
 
 ![](fixedmeme.jpg){fig-align="center"}
 
-\
-Most of the data that we’d use would come analysis ready however in a situation where you are dealing with raw data you would need to correct it. Corrections involve adjusting raw sensor data to remove potential flaws in atmospheric conditions, spatial inaccuracies and topographical variations. 
+Honestly this is the most I have been confused in this module I am lost for words... so I will attempt to summarise it as best as I can.
 
-More often than not remotely sensed data contains flaws. 
+Luckily for me most of the data that I’d use would come analysis ready however in a situation where I am dealing with raw data I would need to correct it. I understand corrections to be adjusting raw sensor data to remove potential flaws in atmospheric conditions, spatial inaccuracies and topographical variations.
 
-A famous example is when the landsat scan line corrector failed, without the landsat corrector we got zig zags and a misaligned image.\
+More often than not remotely sensed data contains flaws.
 
-### **Examples:**
+A famous example is when the landsat scan line corrector failed, without the landsat corrector we got zig zags and a misaligned image.
 
-Geometric correction: refers to the process of correcting for distortions in satellite 
+### **Examples of corrections:**
 
-Imagery caused by multiple different factors including height, speed and direction of the imaging platform. It includes selecting ground control points (points that do not change) and matching them to a gold standard image. OS is probably the best to use as a corrected image because it has highly accurate and regularly updated geographic reference points.
+In this weeks lecture we covered numerous methods of correcting remotely sensed data and according to Google AI there are hundreds. so I will be going through the three main methods.
 
-\
-Atmospheric correction: Atmospheric correction is always the first thing that you should do. It is the process of removing the effects of the Earth's atmosphere on satellite or airborne imagery. Examples include dark object subtraction (DOS), pseudo-invariant features (PIFs) and empirical line correction.
+| Method | Explanation | Strengths | Limitations | Use Case |
+|----|----|----|----|----|
+| **Geometric Correction** | Corrects distortions from imaging platform height, speed, and direction using ground control points and a reference image (e.g., OS maps). | Ensures spatial accuracy; aligns with maps. | Needs reliable reference points; can take a lot of time. | Urban planning; map alignment. |
+| **Atmospheric Correction** | Removes atmospheric effects (scattering, absorption). Techniques include dark object subtraction , pseudo-invariant features and empirical line correction. | Enables cross-time and cross-sensor analysis. | Requires assumptions about atmosphere; mistakes affect results. | Vegetation and land cover change. |
+| **Orthorectification** | Adjusts for terrain/sensor geometry so pixels are as if viewed from directly overhead. | Produces true map projection; accurate areas. | Needs high-quality Digital Elevation Models; computationally demanding. | Topographic mapping; flood risk. |
+| **Radiometric Calibration** | Converts raw digital numbers to surface reflectance values. | Consistent brightness for spectral analysis. | Requires calibration info for each sensor; still affected by lighting/atmosphere. | Climate or water quality studies. |
 
-\
-Orthorectification correction: is a subset of georectification and it creates a final product whereby each pixel in the image is depicted as if it were collected from directly overhead or as close to this as possible.
+## Application:
 
-Radiometric calibration: ensures that the satellite records light correctly by converting the recorded original digital number value into the reflectivity of the outer surface of the atmosphere. 
+Thomas et al. (2019) applied Sentinel-2 imagery with machine learning to map wetlands and estimate biomass in Louisiana.The study employed the Dark Object Subtraction correction using the Semi-Automatic Classification plugin within QGIS.
 
-## Application: 
+The process involved identifying dark objects within the satellite imagery such as deep water, shadows or dense vegetation—that are known to have low reflectance across all spectral bands. The DOS algorithm then estimated the atmospheric haze based on these dark objects and subtracted this from the entire scene.
 
-Applications of Vegetative Indices from Remote Sensing to Agriculture (Hatfield et al., 2019). 
+With less interference from the atmosphere, the surface reflectance became clearer. This allowed for better distinctions between different land cover types such as marshes, forested wetlands, and open water. This resulted in more precise segmentation and classification of vegetation and water bodies, which was particularly critical given the heterogeneous and dynamic nature of the wetlands in Louisiana. Ultimately, the correction contributed to more accurate estimates of wetland extent and composition, which are essential for monitoring changes over time and informing conservation efforts.
 
-I did some research on academic papers that include any mention of corrections. This paper highlights the importance of atmospheric corrections to assess plant conditions.  By modelling atmospheric effects and calibrating data with ground measurements, researchers can enhance the effectiveness of VIs in distinguishing between different crop conditions. This accuracy ensures better monitoring of crop health and quick responses to environmental stresses.
+On the other hand Zhang et al. (2013), investigated the application of hyperspectral remote sensing combined with object-based image analysis (OBIA - ***which will be covered in later weeks)*** and machine learning algorithms to map benthic habitats in the Florida Keys. Specifically, they evaluated the effectiveness of AVIRIS hyperspectral imagery for automated habitat classification.
 
-## Reflection: 
+The study employed the FLAASH (Fast Line-of-Sight Atmospheric Analysis of Spectral Hypercubes) algorithm to perform atmospheric correction on the hyperspectral imagery. The correction was implemented within the ENVI software, a widely used tool for hyperspectral data analysis. This process involves estimating atmospheric conditions, applying models of how light interacts with the atmosphere, and then adjusting the data to remove atmospheric distortions.
 
-The practical was quite long because it explored the many different ways to correct and enhance data. Also, I couldn't complete the section that filtered and fused the data because it continuously crashed my r. I would only attempt this again if it was completely necessary and I had a computer with much better processing power. It will take a lot longer than a week to get around these concepts. However, if I am using raw data, potentially from two different satellites I now know how to perform radiometric calibration and ensure that there is consistency between the datasets.
+In their analysis, the researchers compared classification results from data processed with and without atmospheric correction. They found that applying FLAASH slightly increased the total classification accuracy however, these improvements were not statistically significant. Therefore, although the correction helped remove atmospheric biases, its practical impact on classification accuracy in this context was minimal.
+
+The contrast between these two studies suggests that the value of atmospheric correction cannot be assumed, but must be judged against sensor characteristics and ecosystem context.
+
+## Reflection:
+
+The practical was quite long because it explored the many different ways to correct and enhance data. Also, I couldn't complete the section that filtered and fused the data because it continuously crashed my r. I would only attempt this again if it was completely necessary and I had a computer with much better processing power. It will take a lot longer than a week to get around these concepts. However, if I am using raw data, potentially from two different satellites I now know how to perform radiometric calibration and ensure that there is consistency between the datasets (Lets hope I won't have to anytime soon). This week I learned that there isn't a one size fits all or a right or wrong answer. The type of correction chosen will depend on the use case and the data. Also sometimes a correction just isnt necessary as seen in the case of Zhang et al..

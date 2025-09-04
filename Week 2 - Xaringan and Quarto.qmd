@@ -6,7 +6,24 @@ editor: visual
 
 ## Presentation
 
-```{r, echo=FALSE}
-xaringanExtra::embed_xaringan(url = "https://sady345.github.io/Remote-sensing/#9",
-                              ratio = "16:9")
+This week we were taught how to use Xaringan to create presentations and Quarto to create our learning diary portfolio. This weeks entry contains a short presentation I have created on the hyperspectral sensor hyperion.
+
+```{r, results='asis', echo=FALSE}
+cat('
+<div style="position: relative; width: 100%; padding-bottom: 62.5%; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+  <iframe id="xaringan-frame" 
+          src="https://sady345.github.io/Hyperion"
+          style="position: absolute; top:0; left:0; width:100%; height:100%; border:0;" 
+          allowfullscreen>
+  </iframe>
+  <button onclick="document.getElementById(\'xaringan-frame\').requestFullscreen()" 
+          style="position:absolute; top:10px; right:10px; z-index:10; padding:6px 10px; background:none; color:#fff; border:none; border-radius:4px; cursor:pointer;">
+    ⛶ Expand
+  </button>
+</div>
+')
 ```
+
+## Reflection
+
+After some time playing around with these tools I was able to do some really cool things like create panels in presentation slides (which ultimately reduces the ammounts of slides that need to be used). I can also see using quarto as being a large part of my career as a few of the data visualisations at the council are created using quarto markdown documents for instance the reporting of the <a href="https://www.towerhamlets.gov.uk/Documents/Borough_statistics/Annual-Resident-Survey-2024-summary-briefing.pdf">annual resident survey results</a>. Also, for some time now, the quarterly performance reports have been created manually in PowerPoint (which usually takes the whole quarter). Injecting the data into a qmd would definitely speed up the process and is something I am looking into now.

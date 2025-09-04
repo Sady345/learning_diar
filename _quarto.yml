@@ -8,10 +8,14 @@ book:
   date: "1/21/2025"
   chapters:
     - index.qmd
-    - intro.qmd
     - Week 1 - Getting started with remote sensing.qmd
     - Week 2 - Xaringan and Quarto.qmd
     - Week 3 - corrections.qmd
+    - Week 4 - LA Fires.qmd
+    - Week 5 - GEE.qmd
+    - Week 6 - Classification 1.qmd
+    - Week 7 - Classification 2.qmd
+    - Week 8 - Temperature.qmd
     - summary.qmd
     - references.qmd
 
@@ -19,7 +23,7 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: journal
 
 
 

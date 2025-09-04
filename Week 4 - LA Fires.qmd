@@ -1,0 +1,51 @@
+---
+title: "Week 4 - LA Fires"
+editor: visual
+---
+
+## Summary
+
+On the 7th of January 2025 at approximately 10:30am a devastating fire swept through the Palisades neighborhood of Los Angeles California. After one week the fire had consumed nearly 24,000 acres of wildland and developed areas. More than 16,000 buildings were destroyed, 100,000 people evacuated and an estimated 440 have died as a result of these fires.
+
+::: {style="aspect-ratio:16/9; width:100%; max-width:800px; margin:1rem auto; position:relative;"}
+<iframe
+    src="https://www.youtube.com/embed/sPu75-m3tAU"
+    title="LA residents share stories of survival amid wildfires"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    style="position:absolute; inset:0; width:100%; height:100%; border:0;"> </iframe>
+:::
+
+However California has a long history of wildfires, dating back to the San Francisco Fire of 1851. Which begs the question, in this day and age with all the technology we have: is there a way of mitigating these destructive impacts.
+
+### Policy:
+
+Senate Bill 1101 created by Senator Dave Limón allows the Department of Forestry and Fire Protection to bypass standard bidding rules when securing support for large prescribed fires. It requires the department to identify and map operational boundaries for wildfire response and prescribed burning by 2026. From 2025, the department must publish annual maps showing wildfire impact severity. It also requires an annual review of recent fires to identify priority areas for prescribed burning to reduce fuel hazards, protect communities, and support ecological restoration.
+
+Los Angeles County is developing the Community Wildfire Protection (CWP) Ordinance, a regulatory tool to reduce risks from wildfires in Very High Fire Hazard Severity Zones (VHFHSZ). Initiated by the Board of Supervisors in 2020, the ordinance builds on lessons from the Woolsey Fire After Action Review and expert guidance from the Community Planning Assistance for Wildfire (CPAW) programme.
+
+Development of the ordinance is data-driven. It uses CAL FIRE hazard maps produced through the Fire and Resource Assessment Program (FRAP), which model wildfire risk based on fuels, terrain, and weather. These are paired with findings from the Woolsey Fire, CPAW’s land-use risk modelling, and community input through fire safe councils and local wildfire programmes. Together, these sources shape enforceable standards to make future communities more resilient.
+
+## Application:
+
+FRAP already utilises remotely sensed data to monitor fires, designate hazard risk areas and evaluate the impacts of fires. In 2025 they developed the California Vegetation Burn Severity dataset (their latest dataset) to meet the requirements of the Senate Bill 1101. The dataset estimates fire severity in California between 2015 and 2023 using remotely sensed data. Fire perimeters were taken from FRAP’s Historic Wildland Fire Perimeters database and uploaded to Google Earth Engine (GEE). Within each perimeter, pre- and post-fire Landsat imagery (June–September period) were processed. These generated the Relative differenced Normalised Burn Ratio (RdNBR), which measures vegetation greenness change, and a bias-corrected Composite Burn Index (CBI), predicted from RdNBR using regression equations based on field plots.The resulting continuous rasters were clipped to fire boundaries (and to forest types for CBI), reclassified into severity classes, and converted to vector layers.
+
+Although the U.S. has extensive remote sensing systems for wildfire monitoring and response, their application in predicting, preventing wildfires, and supporting evacuations remains limited.
+
+#### ***I propose a methodology to support wildfire prediction and mitigation efforts using remotely sensed data:***
+
+This method uses Sentinel-2 vegetation indices to map areas with dry vegetation that could fuel wildfires, producing near real-time fuel stress maps and drought time series. VIIRS and Sentinel-1 track wildfire spread and direction, while building footprints, traffic, and population data identify high-risk housing areas and potential evacuation bottlenecks. By combining remote sensing with GIS datasets, hazard risks can be visualised to support mitigation (e.g., controlled burning) and adaptation (e.g., efficient evacuation planning)
+
+![](Workflow.png){fig-align="center" width="100%"}
+
+This method builds on Senate Bill 1101 by making wildfire risk mapping more dynamic and responsive. Instead of relying on static hazard zones, it uses regularly updated satellite data to show changing conditions. This means communities can plan mitigation and evacuation using information that reflects current risk.
+
+## Reflection:
+
+LA is a highly developed city and one of the United States’ largest economic engines. There are many good things you can say about LA despite the heat and traffic congestion. Therefore, they must have already developed a system that can predict wildfires, right? However, although extensive academic research has examined wildfire prediction through remotely sensed data (Sayad et al., 2019; Ntinopoulos et al., 2023), the city has yet to implement such methods, including the approach I proposed. While California employs remotely sensed data to evaluate wildfire impact and map hazard zones, the resulting product remains primarily static.
+
+Upon reflection, one potential improvement to my proposed approach would be the integration of machine learning and classification techniques to enhance wildfire prediction, as referenced in the methods above. Nonetheless, I believe this represents a strong first step toward producing a tangible outcome within a relatively short time frame, as it avoids the need for intensive analysis. Moreover, since FRAP has already utilized GEE for various visualisations, adopting this approach should be relatively feasible.
+
+Finally, while Senate Bill 1101 represents a step forward by requiring CAL FIRE to develop products, the bill leaves a major gap in how these mandates will be carried out. It sets ambitious deadlines but does not guarantee the funding, staffing, or technical resources necessary to implement them effectively. This risks creating a cycle where outputs such as maps and reports are produced to satisfy compliance, but without the capacity to translate them into tangible wildfire resilience. In this sense, the policy is strong on vision but not on execution, limiting its potential impact.
+
+What resonates with me from going through the policy, as an apprentice data scientist, is how often requests from senior leaders arrive with only broad direction. For instance, I might be asked to explore council priorities or measure returns on investment, but without clear guidance on what specifically should be examined or how results should be presented. This can leave analysts spending considerable time trying to interpret intentions rather than focusing on the analysis itself. Although those who do not work with remote sensing data may not grasp the technical details, more communication between decision makers and researchers can help bridge that gap. Leaders do not need to understand every step, but clearer goals and expectations make the analysis more relevant and useful.
