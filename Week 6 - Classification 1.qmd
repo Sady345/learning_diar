@@ -5,7 +5,7 @@ editor: visual
 
 ## Summary
 
-Before the lecture, I felt nervous as machine learning and classification seemed challenging. However, unlike GEE, these techniques have long been used in remote sensing (Lary, 2015) to categorise pixels, objects, or patterns into thematic classes. Here is a very interesting example where a nonprofit organisation used satellite technology and machine learning to combat illegal fishing:
+Before the lecture, I felt nervous as machine learning and classification seemed challenging. However, unlike GEE, these techniques have long been used in remote sensing to categorise pixels, objects, or patterns into thematic classes. Here is a very interesting example where a nonprofit organisation used satellite technology and machine learning to combat illegal fishing:
 
 ::: {style="aspect-ratio:16/9; width:100%; max-width:800px; margin:1rem auto; position:relative;"}
 <iframe src="https://www.youtube.com/embed/Mz9xysVIrUU" title="Project eyes on the seas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%; border:0;">
@@ -28,7 +28,7 @@ There are various types of machine learning:
 **Below I break down some the methods we have discussed in the lecture in the best way I can.. Through a table (not all otherwise we'd be here forever):** <br>
 
 | **Name** | **Type** | **Method** | **Strengths** | **Limitations** |
-|----|----|----|----|----|
+|---------------|---------------|---------------|---------------|---------------|
 | **Classification and Regression Trees (CART)** | Supervised | Builds a decision tree by splitting data into groups based on key features; final leaves give predicted class (categorical) or value (continuous). | Easy to understand & interpret; handles both categorical & continuous data. | Prone to overfitting; unstable to small changes; lower accuracy than ensembles (e.g., Random Forests). |
 | **Random Forests** | Supervised | Ensemble of CART trees built from bootstrap samples and random feature subsets; predictions combined by majority vote (classification) or averaging (regression). | High accuracy & robustness; handles large datasets; reduces overfitting. | Less interpretable (“black box”); computationally heavier; requires parameter tuning. |
 | **k-means** | Unsupervised | Groups pixels into *k* clusters by assigning them to the nearest cluster center and adjusting centers until stable. | Simple & fast; works well with compact, well-separated clusters; no training data needed. | Must predefine *k*; sensitive to initial placement; struggles with irregular or noisy clusters. |
@@ -39,7 +39,7 @@ There are various types of machine learning:
 
 With higher accuracy we often lose interpretability of our models.
 
-![](machine_learning.png){fig-align="center"}
+![](machine_learning.png){fig-align="center" width="566"}
 
 **Source:** [SHEYKHMOUSA et al. 2020 Support Vector Machine Versus Random Forest for Remote Sensing Image Classification: A Meta-Analysis and Systematic Review](https://www.researchgate.net/figure/Four-causes-of-mixed-pixels_fig3_242103275)
 
@@ -51,15 +51,15 @@ Whereas with Random Forests - we don’t know predictions are made because while
 
 ### Supervised method:
 
-![Framework of the proposed method for mangrove ecosystem mapping using the random forest (RF)](mangrove.jpg){fig-align="center"}
+![Framework of the proposed method for mangrove ecosystem mapping using the random forest (Ghorbanian et al., 2021)](mangrove.jpg){fig-align="center"}
 
 Ghorbanian et al. (2021), mapped the Hara mangrove ecosystem using Sentinel-1 synthetic aperture radar data and Sentinel-2 optical data within Google Earth Engine. Nine detailed mangrove classes were identified using precise reference samples from high-resolution imagery,divided into training and testing sets with cross-validation to ensure robustness. Seasonal features reflecting tidal variations were used with a Random Forest classifier, improving classification accuracy. The approach achieved high accuracy (93.23% overall accuracy, 0.92 Kappa coefficient) and consistency, demonstrating the effectiveness of combining multi-source data and seasonal downscaling for detailed, automated, and repeatable mangrove ecosystem mapping worldwide. Supervised classification was ideal due to difficult field access, necessitating reliable reference data from imagery, and the need to differentiate detailed mangrove classes critical for ecosystem monitoring.
 
 ### Unsupervised:
 
-On the other hand Rapinela et al. (2019) used an unsupervised hierarchical TWINSPAN classifier to group vegetation relevé data into plant community types. TWINSPAN worked by repeatedly splitting the data into clusters based on species composition and identifying indicator species that defined each division. This process produced a hierarchical classification tree of vegetation units, with each relevé assigned to a cluster of similar species assemblages. The quality of these clusters was then assessed using silhouette widths, where values close to 1 indicated strong cohesion within clusters and clear separation from others. This method effectively identified consistent, locally relevant plant communities in wet grasslands, avoiding the limitations of broad, continental-scale habitat maps that often overlook fine-scale ecological patterns.
+On the other hand Rapinel et al. (2019) used an unsupervised hierarchical TWINSPAN classifier to group vegetation relevé data into plant community types. TWINSPAN worked by repeatedly splitting the data into clusters based on species composition and identifying indicator species that defined each division. This process produced a hierarchical classification tree of vegetation units, with each relevé assigned to a cluster of similar species assemblages. The quality of these clusters was then assessed using silhouette widths, where values close to 1 indicated strong cohesion within clusters and clear separation from others. This method effectively identified consistent, locally relevant plant communities in wet grasslands, avoiding the limitations of broad, continental-scale habitat maps that often overlook fine-scale ecological patterns.
 
-![Map of plant communities derived from the classification of Sentinel-2 time-series using a linear kernel support vector machine classifier.](Unsupervised.png){fig-align="center" width="274"}
+![Map of plant communities derived from the classification of Sentinel-2 time-series using a linear kernel support vector machine classifier (Rapinela et al., 2019).](Unsupervised.png){fig-align="center" width="274"}
 
 Ultimately, Ghorbanian et al. (2021) showed supervised methods achieve high accuracy but rely on reference data and heavy computation. Rapinela et al. (2019) highlighted that unsupervised approaches avoid this but are less transferable. Future work could explore hybrid or semi-supervised methods (Which I’m sure we will cover next week), combining the precision of supervised models with the adaptability of unsupervised ones, supported by advances in transfer learning and cloud-based platforms.
 
@@ -78,3 +78,9 @@ I also started to think about other ways I could apply classification and remote
 The lecture also raised a critical methodological point. If training and validation data are located too closely together. This spatial dependency can lead to inflated accuracy, effectively giving the model a “sneak peek” at validation data. Unless this is accounted for through techniques such as spatial cross validation or block sampling, results may appear stronger than they truly are. The risk is particularly important in policy contexts, where misleading accuracy could undermine trust or lead to poor decisions.
 
 Overall, I think that this week was less about memorising algorithms and more about understanding their implications. Machine learning is not simply a technical skillset but a bridge between disciplines. It holds potential for environmental monitoring, urban planning, and social policy, provided it is applied with both rigour and transparency.
+
+## References:
+
+Ghorbanian, A., Zaghian, S., Asiyabi, R.M., Amani, M., Mohammadzadeh, A. and Jamali, S. (2021). Mangrove Ecosystem Mapping Using Sentinel-1 and Sentinel-2 Satellite Images and Random Forest Algorithm in Google Earth Engine. Remote Sensing, 13(13), p.2565. doi:<https://doi.org/10.3390/rs13132565>.
+
+Rapinel, S., Mony, C., Lecoq, L., Clément, B., Thomas, A., & Hubert-Moy, L. (2019). Evaluation of Sentinel-2 time-series for mapping floodplain grassland plant communities. *Remote Sensing of Environment,* 223, 115–129. <https://doi.org/10.1016/j.rse.2019.01.018>

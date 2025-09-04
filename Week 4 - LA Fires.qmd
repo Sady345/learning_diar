@@ -8,12 +8,9 @@ editor: visual
 On the 7th of January 2025 at approximately 10:30am a devastating fire swept through the Palisades neighborhood of Los Angeles California. After one week the fire had consumed nearly 24,000 acres of wildland and developed areas. More than 16,000 buildings were destroyed, 100,000 people evacuated and an estimated 440 have died as a result of these fires.
 
 ::: {style="aspect-ratio:16/9; width:100%; max-width:800px; margin:1rem auto; position:relative;"}
-<iframe
-    src="https://www.youtube.com/embed/sPu75-m3tAU"
-    title="LA residents share stories of survival amid wildfires"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    style="position:absolute; inset:0; width:100%; height:100%; border:0;"> </iframe>
+<iframe src="https://www.youtube.com/embed/sPu75-m3tAU" title="LA residents share stories of survival amid wildfires" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%; border:0;">
+
+</iframe>
 :::
 
 However California has a long history of wildfires, dating back to the San Francisco Fire of 1851. Which begs the question, in this day and age with all the technology we have: is there a way of mitigating these destructive impacts.
@@ -49,3 +46,17 @@ Upon reflection, one potential improvement to my proposed approach would be the 
 Finally, while Senate Bill 1101 represents a step forward by requiring CAL FIRE to develop products, the bill leaves a major gap in how these mandates will be carried out. It sets ambitious deadlines but does not guarantee the funding, staffing, or technical resources necessary to implement them effectively. This risks creating a cycle where outputs such as maps and reports are produced to satisfy compliance, but without the capacity to translate them into tangible wildfire resilience. In this sense, the policy is strong on vision but not on execution, limiting its potential impact.
 
 What resonates with me from going through the policy, as an apprentice data scientist, is how often requests from senior leaders arrive with only broad direction. For instance, I might be asked to explore council priorities or measure returns on investment, but without clear guidance on what specifically should be examined or how results should be presented. This can leave analysts spending considerable time trying to interpret intentions rather than focusing on the analysis itself. Although those who do not work with remote sensing data may not grasp the technical details, more communication between decision makers and researchers can help bridge that gap. Leaders do not need to understand every step, but clearer goals and expectations make the analysis more relevant and useful.
+
+## References:
+
+Aspinwall, N. (2025). ‘It’s insane to build the same thing and expect different results’: Can LA fire-proof itself? \[online\] Bbc.co.uk. Available at:[ https://www.bbc.co.uk/future/article/20250626-can-la-fire-proof-itself](https://www.bbc.co.uk/future/article/20250626-can-la-fire-proof-itself).
+
+FRAP. (nd) *Fire and resource assessment program*, *Cal FIRE*. Available at: <https://www.fire.ca.gov/what-we-do/fire-resource-assessment-program>.
+
+LSE (2017). In Los Angeles, the geography of where people work has been experiencing rapid change. \[online\]. Available at:[ https://blogs.lse.ac.uk/usappblog/2017/02/22/in-los-angeles-the-geography-of-where-people-work-has-been-experiencing-rapid-change/](https://blogs.lse.ac.uk/usappblog/2017/02/22/in-los-angeles-the-geography-of-where-people-work-has-been-experiencing-rapid-change/).
+
+Planning, L.C. (2024) Community wildfire protection ordinance, Community Wildfire Protection Ordinance. Available at: https://planning.lacounty.gov/long-range-planning/community-wildfire-protection-ordinance/.
+
+Senate, C. (2024) SB 1101: Fire prevention: Prescribed fire: State contracts: Maps.: Digital Democracy, Home - Digital Democracy. Available at: https://calmatters.digitaldemocracy.org/bills/ca_202320240sb1101. 
+
+Yousif, N. (2025). More than 400 indirect deaths linked to LA wildfires, study says. BBC News. \[online\] 6 Aug. Available at:[ https://www.bbc.co.uk/news/articles/cx29wjg3vz2o](https://www.bbc.co.uk/news/articles/cx29wjg3vz2o).

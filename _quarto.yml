@@ -6,6 +6,8 @@ book:
   title: "Learning Diary"
   author: "Sadia Munye"
   date: "1/21/2025"
+  repo-url: https://github.com/Sady345/learning_diar
+  repo-actions: [source]
   chapters:
     - index.qmd
     - Week 1 - Getting started with remote sensing.qmd
@@ -16,14 +18,17 @@ book:
     - Week 6 - Classification 1.qmd
     - Week 7 - Classification 2.qmd
     - Week 8 - Temperature.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib
 
 format:
   html:
-    theme: journal
+    theme:
+      light: journal
+      dark: darkly
+    toggle: true
+
 
 
 

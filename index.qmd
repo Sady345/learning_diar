@@ -1,9 +1,21 @@
 # Welcome {.unnumbered}
 
+Hello! Welcome to my remote sensing learning journey. This is the module I have been excited about the most all year as the idea of using satellite imagery (data I've never used before) just sounded very cool. I'll admit I am a bit nervous as although I am familiar with geographic data science techniques from my previous casa modules, it feels like remote sensing will include a lot more maths and science, which isn't my strong suit (quite ironic as I'm taking a spatial data science masters degree).
+
+**Anyway a bit about my background:**
+
+I am undertaking a part-time masters here at CASA while working for the London Borough of Tower Hamlets as a apprentice data scientist and I previously graduated with BSc in geography. I would say that my job is ideal and I love the fact that I can study but also apply what I have studied on the job. I am also really excited to find potential use cases for remote sensing in the council.
+
+**I hope to take a few things out of this module:**
+
+1.  Gain a better understanding of remote sensing and applications (where it is and isn't useful).
+
+2.  Understand how to process and analyse remotely sensed data.
+
+3.  Learn how to build professional websites using R and quarto.
+
+4.  Find questions that can be solved in the council using remotely sensed data.
+
 This is a Quarto book.
 
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```

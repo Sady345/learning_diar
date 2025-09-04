@@ -18,10 +18,10 @@ A famous example is when the landsat scan line corrector failed, without the lan
 
 ### **Examples of corrections:**
 
-In this weeks lecture we covered numerous methods of correcting remotely sensed data and according to Google AI there are hundreds. so I will be going through the three main methods.
+In this weeks lecture we covered numerous methods of correcting remotely sensed data and according to Google AI there are hundreds. so I will be going through the 4 main methods. Here is a table i complied using notes from the lecture and further reading.
 
 | Method | Explanation | Strengths | Limitations | Use Case |
-|----|----|----|----|----|
+|---------------|---------------|---------------|---------------|---------------|
 | **Geometric Correction** | Corrects distortions from imaging platform height, speed, and direction using ground control points and a reference image (e.g., OS maps). | Ensures spatial accuracy; aligns with maps. | Needs reliable reference points; can take a lot of time. | Urban planning; map alignment. |
 | **Atmospheric Correction** | Removes atmospheric effects (scattering, absorption). Techniques include dark object subtraction , pseudo-invariant features and empirical line correction. | Enables cross-time and cross-sensor analysis. | Requires assumptions about atmosphere; mistakes affect results. | Vegetation and land cover change. |
 | **Orthorectification** | Adjusts for terrain/sensor geometry so pixels are as if viewed from directly overhead. | Produces true map projection; accurate areas. | Needs high-quality Digital Elevation Models; computationally demanding. | Topographic mapping; flood risk. |
@@ -41,8 +41,14 @@ The study employed the FLAASH (Fast Line-of-Sight Atmospheric Analysis of Spectr
 
 In their analysis, the researchers compared classification results from data processed with and without atmospheric correction. They found that applying FLAASH slightly increased the total classification accuracy however, these improvements were not statistically significant. Therefore, although the correction helped remove atmospheric biases, its practical impact on classification accuracy in this context was minimal.
 
-The contrast between these two studies suggests that the value of atmospheric correction cannot be assumed, but must be judged against sensor characteristics and ecosystem context.
+In the future if I were to undertake a similar study I would prioritise testing correction methods across sensor types in order to identify where they add the greatest value. For instance in biomass modelling or subtle habitat change detection. In my view, correction is most promising in multispectral applications where atmospheric interference strongly limits class separability, whereas in hyperspectral contexts it should be applied more selectively to avoid unnecessary processing.
 
 ## Reflection:
 
 The practical was quite long because it explored the many different ways to correct and enhance data. Also, I couldn't complete the section that filtered and fused the data because it continuously crashed my r. I would only attempt this again if it was completely necessary and I had a computer with much better processing power. It will take a lot longer than a week to get around these concepts. However, if I am using raw data, potentially from two different satellites I now know how to perform radiometric calibration and ensure that there is consistency between the datasets (Lets hope I won't have to anytime soon). This week I learned that there isn't a one size fits all or a right or wrong answer. The type of correction chosen will depend on the use case and the data. Also sometimes a correction just isnt necessary as seen in the case of Zhang et al..
+
+## References:
+
+Thomas, N., Simard, M., Castañeda-Moya, E., Byrd, K., Windham-Myers, L., Bevington, A. and Twilley, R.R. (2019). High-resolution mapping of biomass and distribution of marsh and forested wetlands in southeastern coastal Louisiana. International Journal of Applied Earth Observation and Geoinformation, 80, pp.257–267.
+
+Zhang, C., Selch, D., Xie, Z., Roberts, C., Cooper, H. and Chen, G. (2013). Object-based benthic habitat mapping in the Florida Keys from hyperspectral imagery. Estuarine, Coastal and Shelf Science, 134, pp.88–97. doi:<https://doi.org/10.1016/j.ecss.2013.09.018.>

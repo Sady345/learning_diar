@@ -35,13 +35,14 @@ In 2011 Moskal et al., published a study which used OBIA to classify land use an
 
 The image below displays (a) 2002 and (b) 2009 OBIA drive classifications. Where: dark green represents tree cover, light green represents grass and fields and all other colours are impervious surfaces (grey for roads and paved areas, light brown for ground and brown for buildings.
 
-![](OBIA.png){fig-align="center"}
+![(a) 2002 and (b) 2009 OBIA drive classification (Moskal et al., 2011)](OBIA.png){fig-align="center"}
 
 To assess the accuracy of each case study, a visual assessment using 2.54 cm resolution, 2002 aerial imagery combined with the 2009 co-registered oblique photography was conducted by an expert image analyst who was not involved in the classification process. The image below represents a confusion matrix similar to the ones we discussed in the lecture to display the accuracy assessment for case study 1.
 
 \
-![](OBIA_2.png)\
-\
+![](OBIA_2.png){fig-align="center" width="510"}\
+Confusion matrix (Moskal et al., 2011)
+
 The overall accuracy was 71.3% which is reasonably good for broad analysis, however may not be useful for fine scale analysis. Segmentation often over- or under-represented features, while spectral confusion between trees, grass, and shadows reduced accuracy. The 71.3% overall accuracy also meant nearly one in three features were misclassified. Likewise, the assessment was undertaken by a single analyst. 
 
 Ghorbanzadeh et al., however aimed to improve the detection of landslides using a combination of deep learning and OBIA. They first generated landslide probability maps with ResU-Net, which identified potential landslide areas based on pixel-level classification. then applied rule-based OBIA using geometrical features including the length-to-width ratio to distinguish between landslides and other similar looking features such as riverbeds. By integrating both approaches, they produced more accurate landslide maps, significantly improving detection performance compared to using each method alone.
@@ -58,4 +59,8 @@ For now, based on what I understand from the material, if I were to choose a cla
 
 At work, these methods could be applied to monitoring how green space within urban areas changes over time. The council are often researching leisure and physical activity of residents in the borough and the topic of proximity to greenspace has come up. Likewise, Tower Hamlets is also rapidly growing in population and new developments are often being built to adapt to this. Being able to distinguish between mixed land cover types would make it easier to track whether areas that appear as open space are gradually being lost to development or whether vegetation quality within parks is declining.
 
-Links:
+## References:
+
+Ghorbanzadeh, O., Shahabi, H., Crivellari, A., Homayouni, S., Blaschke, T. and Ghamisi, P. (2022). Landslide detection using deep learning and object-based image analysis. Landslides, 19(4), pp.929–939. doi:<https://doi.org/10.1007/s10346-021-01843-x>.
+
+Moskal, L.M., Styers, D.M. and Halabisky, M. (2011). Monitoring urban tree cover using object-based image analysis and public domain remotely sensed data. Remote Sensing, 3(10), pp. 2243–2262. doi:10.3390/rs3102243.

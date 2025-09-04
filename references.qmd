@@ -1,4 +1,47 @@
-# References {.unnumbered}
+## References
 
-::: {#refs}
-:::
+<br>
+
+Aspinwall, N. (2025). ‘It’s insane to build the same thing and expect different results’: Can LA fire-proof itself? \[online\] Bbc.co.uk. Available at:<https://www.bbc.co.uk/future/article/20250626-can-la-fire-proof-itself>.
+
+Earthblox.io. (2024). Earth Blox dataset review: Dynamic World Landcover (10m) \| Blog \| Earth Blox. \[online\] Available at:<https://www.earthblox.io/resources/earth-blox-dataset-review-dynamic-world-landcover--10m>.
+
+Ghorbanian, A., Zaghian, S., Asiyabi, R.M., Amani, M., Mohammadzadeh, A. and Jamali, S. (2021). Mangrove Ecosystem Mapping Using Sentinel-1 and Sentinel-2 Satellite Images and Random Forest Algorithm in Google Earth Engine. Remote Sensing, 13(13), p.2565. doi:<https://doi.org/10.3390/rs13132565>.
+
+Ghorbanzadeh, O., Shahabi, H., Crivellari, A., Homayouni, S., Blaschke, T. and Ghamisi, P. (2022). Landslide detection using deep learning and object-based image analysis. Landslides, 19(4), pp.929–939. doi:<https://doi.org/10.1007/s10346-021-01843-x>.
+
+Liu, D. and Xia, F. (2010). Assessing object-based classification: advantages and limitations. Remote Sensing Letters, 1(4), pp.187–194. doi:<https://doi.org/10.1080/01431161003743173>.
+
+LSE , Kane, K. and Comment, regional policies\|1 (2017). In Los Angeles, the geography of where people work has been experiencing rapid change. \[online\] USAPP. Available at:<https://blogs.lse.ac.uk/usappblog/2017/02/22/in-los-angeles-the-geography-of-where-people-work-has-been-experiencing-rapid-change/>.
+
+Moskal, L.M., Styers, D.M. and Halabisky, M. (2011). Monitoring urban tree cover using object-based image analysis and public domain remotely sensed data. Remote Sensing, 3(10), pp. 2243–2262. doi:10.3390/rs3102243.
+
+Ntinopoulos, N., Sakellariou, S., Christopoulou, O. and Sfougaris, A. (2023). Fusion of Remotely-Sensed Fire-Related Indices for Wildfire Prediction through the Contribution of Artificial Intelligence. Sustainability, 15(15), pp.11527–11527. doi:<https://doi.org/10.3390/su151511527>.
+
+Parks, S., Holsinger, L., Voss, M., Loehman, R. and Robinson, N. (2018). Mean Composite Fire Severity Metrics Computed with Google Earth Engine Offer Improved Accuracy and Expanded Mapping Potential. Remote Sensing, 10(6), p.879. doi:<https://doi.org/10.3390/rs10060879>.
+
+Planning, L.C. (2024) Community wildfire protection ordinance, Community Wildfire Protection Ordinance. Available at: https://planning.lacounty.gov/long-range-planning/community-wildfire-protection-ordinance/. 
+
+Quintano, C., Fernández-Manso, A. and Fernández-Manso, O. (2018). Combination of Landsat and Sentinel-2 MSI data for initial assessing of burn severity. International Journal of Applied Earth Observation and Geoinformation, \[online\] 64, pp.221–225. Available at:<https://www.sciencedirect.com/science/article/pii/S0303243417302039> \[Accessed 12 Mar. 2023\].
+
+Rapinel, S., Mony, C., Lecoq, L., Clément, B., Thomas, A., & Hubert-Moy, L. (2019). Evaluation of Sentinel-2 time-series for mapping floodplain grassland plant communities. Remote Sensing of Environment, 223, 115–129. https://doi.org/10.1016/j.rse.2019.01.018
+
+Ravanelli, R., Nascetti, A., Cirigliano, R., Rico, R.V., Leuzzi, G., Monti, P. and Crespi, M. (2017). Remote Sensing-Based Urban Land Use/Land Cover Change Detection and Monitoring. Journal of Remote Sensing & GIS, 06(02). doi:<https://doi.org/10.4172/2469-4134.1000196>.
+
+Sayad, Y.O., Mousannif, H. and Al Moatassime, H. (2019). Predictive modeling of wildfires: A new dataset and machine learning approach. Fire Safety Journal, 104, pp.130–146. doi:<https://doi.org/10.1016/j.firesaf.2019.01.006>.
+
+Senate, C. (2024) SB 1101: Fire prevention: Prescribed fire: State contracts: Maps.: Digital Democracy, Home - Digital Democracy. Available at: <https://calmatters.digitaldemocracy.org/bills/ca_202320240sb1101>. 
+
+Taneepanichskul, N., Hailes, H. C. and Miodownik, M., (2025). Using hyperspectral imaging and machine learning to identify food contaminated compostable and recyclable plastics. UCL Open Environment 7, 1.
+
+Thomas, N., Simard, M., Castañeda-Moya, E., Byrd, K., Windham-Myers, L., Bevington, A. and Twilley, R.R. (2019). High-resolution mapping of biomass and distribution of marsh and forested wetlands in southeastern coastal Louisiana. International Journal of Applied Earth Observation and Geoinformation, 80, pp.257–267.
+
+USGS (2025). What Is Remote Sensing and What Is It Used for? \[online\] www.usgs.gov. Available at:<https://www.usgs.gov/faqs/what-remote-sensing-and-what-it-used>.
+
+Weng, Q., Fu, P. and Gao, F. (2014). Generating daily land surface temperature at Landsat resolution by fusing Landsat and MODIS data. Remote Sensing of Environment, 145, pp.55–67. doi:<https://doi.org/10.1016/j.rse.2014.02.003>.
+
+World Health Organization (2024). Heat and health. \[online\] World Health Organization. Available at:<https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health>.
+
+Yousif, N. (2025). More than 400 indirect deaths linked to LA wildfires, study says. BBC News. \[online\] 6 Aug. Available at:<https://www.bbc.co.uk/news/articles/cx29wjg3vz2o>.
+
+Zhang, C., Selch, D., Xie, Z., Roberts, C., Cooper, H. and Chen, G. (2013). Object-based benthic habitat mapping in the Florida Keys from hyperspectral imagery. Estuarine, Coastal and Shelf Science, 134, pp.88–97. doi:<https://doi.org/10.1016/j.ecss.2013.09.018>.
